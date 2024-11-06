@@ -29,11 +29,9 @@ def findMedian(nums1, nums2):
         else:
             left = i + 1   # 向右移动左边界
 
+# 示例使用：
 nums1 = [1, 3]
-nums2 = [2]
+nums2 = [2,4]
 
-# 将数组从大到小排序
-nums1_sorted = sorted(nums1, reverse=True)
-nums2_sorted = sorted(nums2, reverse=True)
-
-print(findMedian(nums1_sorted, nums2_sorted))  # 输出: 2.0
+# 无需手动排序，前提是传入的 nums1 和 nums2 已经是排序好的
+print(findMedian(nums1, nums2))  # 输出: 2.0
